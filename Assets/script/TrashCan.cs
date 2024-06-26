@@ -21,12 +21,17 @@ public class TrashCan : MonoBehaviour, IDropHandler
                     {
                         draggableTrash.ReturnToOriginalPos();
                         Debug.Log("Incorrect");
+                        GameManager.GetInstance().OnIncorrectAnswer();
                         return;
                     }
+
+                    Debug.Log("Correct");
+                    GameManager.GetInstance().OnCorrectAnswer(eventData.pointerDrag.gameObject);
                 }
                 else
                 {
                     Debug.Log("Correct");
+                    GameManager.GetInstance().OnCorrectAnswer(eventData.pointerDrag.gameObject);
                 }
                     
             }
@@ -34,6 +39,7 @@ public class TrashCan : MonoBehaviour, IDropHandler
             {
                 Debug.Log("Incorrect");
                 draggableTrash.ReturnToOriginalPos();
+                GameManager.GetInstance().OnIncorrectAnswer();
                 return;
             }
 

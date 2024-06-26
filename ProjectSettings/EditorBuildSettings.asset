@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/quis.unity
     guid: c056fd99a0fd2da4aa0abfde2dd64376
+  - enabled: 1
+    path: Assets/Scenes/bermain.unity
+    guid: ad28e44237adb9649a946ee973faebaa
   m_configObjects: {}
