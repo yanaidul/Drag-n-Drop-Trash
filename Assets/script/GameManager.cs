@@ -17,7 +17,7 @@ public class GameManager : Singleton<GameManager>
         _onIncorrectAnswer.Raise();
         if(_score > 0)
         {
-            _score--;
+            _score -= 10;
             _scoreText.SetText("Score: " + _score.ToString());
         }
     }
@@ -26,7 +26,7 @@ public class GameManager : Singleton<GameManager>
     {
         _listTrash.Remove(discardedGameObject);
         _onCorrectAnswer.Raise();
-        _score++;
+        _score += 10;
         _scoreText.SetText("Score: " + _score.ToString());
         if (_listTrash.Count <= 0)
         {
