@@ -14,4 +14,9 @@ public class SceneHandler : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void ToGameScene()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
