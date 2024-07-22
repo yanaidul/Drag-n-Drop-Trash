@@ -33,7 +33,6 @@ public class TrashCan : MonoBehaviour, IDropHandler
                     Debug.Log("Correct");
                     GameManager.GetInstance().OnCorrectAnswer(eventData.pointerDrag.gameObject);
                 }
-                    
             }
             else
             {
@@ -46,18 +45,4 @@ public class TrashCan : MonoBehaviour, IDropHandler
             eventData.pointerDrag.gameObject.SetActive(false);
         }
     }
-
-    //IEnumerator DelayBeforeDisplayResult(DraggableTrash draggableAnswer)
-    //{
-    //    yield return new WaitForSeconds(0.5F);
-    //    if(draggableAnswer.IsThisRightAnswer)
-    //    {
-
-    //    }
-    //    else
-    //    {
-
-    //    }
-    //    draggableAnswer.ReturnToOriginalPos();
-    //}
 }

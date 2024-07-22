@@ -54,6 +54,7 @@ public class DraggableTrash : MonoBehaviour, IPointerDownHandler, IBeginDragHand
 
     public void OnDrag(PointerEventData eventData)
     {
+        Debug.Log("Drag");
         _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
     }
 

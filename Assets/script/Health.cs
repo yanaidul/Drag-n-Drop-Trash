@@ -6,8 +6,8 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _healthIconList = new List<GameObject>();
     [SerializeField] private GameEventNoParam _onGameOver;
-    public int _totalHealth = 5;
-    public int _howManyHealthInThisLevel = 5;
+    public int _totalHealth;
+    public int _howManyHealthInThisLevel;
 
     private void OnEnable()
     {

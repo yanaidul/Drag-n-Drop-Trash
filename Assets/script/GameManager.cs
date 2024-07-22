@@ -15,7 +15,7 @@ public class GameManager : Singleton<GameManager>
     public void OnIncorrectAnswer()
     {
         _onIncorrectAnswer.Raise();
-        if(_score > 0)
+        if (_score > 0)
         {
             _score -= 10;
             _scoreText.SetText("Score: " + _score.ToString());
